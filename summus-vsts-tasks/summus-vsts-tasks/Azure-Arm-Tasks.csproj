@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1ABED1A2-7D77-4669-BBE4-4E802C8B33E2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VSTSExtensionv3</RootNamespace>
+    <AssemblyName>VSTSExtensionv3</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TypeScriptToolsVersion>2.0.6</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44300</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AzureARMTemplateDeployment\icon.png" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\Minimatch.dll" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\Strings\resources.resjson\de-de\resources.resjson" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\Strings\resources.resjson\en-US\resources.resjson" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\Strings\resources.resjson\es-es\resources.resjson" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\Strings\resources.resjson\fr-fr\resources.resjson" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\Strings\resources.resjson\it-IT\resources.resjson" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\Strings\resources.resjson\ja-jp\resources.resjson" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\Strings\resources.resjson\ko-KR\resources.resjson" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\Strings\resources.resjson\ru-RU\resources.resjson" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\Strings\resources.resjson\zh-CN\resources.resjson" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\Strings\resources.resjson\zh-TW\resources.resjson" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\VstsTaskSdk.dll" />
+    <Content Include="AzureAutomationAccount\icon.png" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\Minimatch.dll" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\Strings\resources.resjson\de-de\resources.resjson" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\Strings\resources.resjson\en-US\resources.resjson" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\Strings\resources.resjson\es-es\resources.resjson" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\Strings\resources.resjson\fr-fr\resources.resjson" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\Strings\resources.resjson\it-IT\resources.resjson" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\Strings\resources.resjson\ja-jp\resources.resjson" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\Strings\resources.resjson\ko-KR\resources.resjson" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\Strings\resources.resjson\ru-RU\resources.resjson" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\Strings\resources.resjson\zh-CN\resources.resjson" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\Strings\resources.resjson\zh-TW\resources.resjson" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\VstsTaskSdk.dll" />
+    <Content Include="AzureGetAARegInfo\icon.png" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\Minimatch.dll" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\Strings\resources.resjson\de-de\resources.resjson" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\Strings\resources.resjson\en-US\resources.resjson" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\Strings\resources.resjson\es-es\resources.resjson" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\Strings\resources.resjson\fr-fr\resources.resjson" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\Strings\resources.resjson\it-IT\resources.resjson" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\Strings\resources.resjson\ja-jp\resources.resjson" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\Strings\resources.resjson\ko-KR\resources.resjson" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\Strings\resources.resjson\ru-RU\resources.resjson" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\Strings\resources.resjson\zh-CN\resources.resjson" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\Strings\resources.resjson\zh-TW\resources.resjson" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\VstsTaskSdk.dll" />
+    <Content Include="AzureImportAAResource\icon.png" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\Minimatch.dll" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\Strings\resources.resjson\de-de\resources.resjson" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\Strings\resources.resjson\en-US\resources.resjson" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\Strings\resources.resjson\es-es\resources.resjson" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\Strings\resources.resjson\fr-fr\resources.resjson" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\Strings\resources.resjson\it-IT\resources.resjson" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\Strings\resources.resjson\ja-jp\resources.resjson" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\Strings\resources.resjson\ko-KR\resources.resjson" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\Strings\resources.resjson\ru-RU\resources.resjson" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\Strings\resources.resjson\zh-CN\resources.resjson" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\Strings\resources.resjson\zh-TW\resources.resjson" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\VstsTaskSdk.dll" />
+    <Content Include="AzureImportDSCConfiguration\icon.png" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\Minimatch.dll" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\Strings\resources.resjson\de-de\resources.resjson" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\Strings\resources.resjson\en-US\resources.resjson" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\Strings\resources.resjson\es-es\resources.resjson" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\Strings\resources.resjson\fr-fr\resources.resjson" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\Strings\resources.resjson\it-IT\resources.resjson" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\Strings\resources.resjson\ja-jp\resources.resjson" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\Strings\resources.resjson\ko-KR\resources.resjson" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\Strings\resources.resjson\ru-RU\resources.resjson" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\Strings\resources.resjson\zh-CN\resources.resjson" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\Strings\resources.resjson\zh-TW\resources.resjson" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\VstsTaskSdk.dll" />
+    <Content Include="AzureNewResourceGroup\icon.png" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\Minimatch.dll" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\Strings\resources.resjson\de-de\resources.resjson" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\Strings\resources.resjson\en-US\resources.resjson" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\Strings\resources.resjson\es-es\resources.resjson" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\Strings\resources.resjson\fr-fr\resources.resjson" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\Strings\resources.resjson\it-IT\resources.resjson" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\Strings\resources.resjson\ja-jp\resources.resjson" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\Strings\resources.resjson\ko-KR\resources.resjson" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\Strings\resources.resjson\ru-RU\resources.resjson" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\Strings\resources.resjson\zh-CN\resources.resjson" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\Strings\resources.resjson\zh-TW\resources.resjson" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\VstsTaskSdk.dll" />
+    <Content Include="AzureNewStorageAccount\icon.png" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\Minimatch.dll" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\Strings\resources.resjson\de-de\resources.resjson" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\Strings\resources.resjson\en-US\resources.resjson" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\Strings\resources.resjson\es-es\resources.resjson" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\Strings\resources.resjson\fr-fr\resources.resjson" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\Strings\resources.resjson\it-IT\resources.resjson" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\Strings\resources.resjson\ja-jp\resources.resjson" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\Strings\resources.resjson\ko-KR\resources.resjson" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\Strings\resources.resjson\ru-RU\resources.resjson" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\Strings\resources.resjson\zh-CN\resources.resjson" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\Strings\resources.resjson\zh-TW\resources.resjson" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\VstsTaskSdk.dll" />
+    <Content Include="static\images\logo.png" />
+    <Content Include="static\images\Screen1.png" />
+    <Content Include="AzureNewResourceGroup\azurenewresourceGroup.ps1" />
+    <Content Include="AzureNewResourceGroup\AzureRmSetup.ps1" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\FindFunctions.ps1" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\InputFunctions.ps1" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\LegacyFindFunctions.ps1" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\lib.json" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\LocalizationFunctions.ps1" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\LoggingCommandFunctions.ps1" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\LongPathFunctions.ps1" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\OutFunctions.ps1" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\ServerOMFunctions.ps1" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\ToolFunctions.ps1" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\TraceFunctions.ps1" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\VstsTaskSdk.psd1" />
+    <Content Include="AzureNewResourceGroup\ps_modules\VstsTaskSdk\VstsTaskSdk.psm1" />
+    <Content Include="AzureNewResourceGroup\task.json" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\FindFunctions.ps1" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\InputFunctions.ps1" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\LegacyFindFunctions.ps1" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\lib.json" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\LocalizationFunctions.ps1" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\LoggingCommandFunctions.ps1" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\LongPathFunctions.ps1" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\OutFunctions.ps1" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\ServerOMFunctions.ps1" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\ToolFunctions.ps1" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\TraceFunctions.ps1" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\VstsTaskSdk.psd1" />
+    <Content Include="AzureNewStorageAccount\ps_modules\VstsTaskSdk\VstsTaskSdk.psm1" />
+    <Content Include="AzureNewStorageAccount\azurenewstorageaccount.ps1" />
+    <Content Include="AzureRmSetup.ps1" />
+    <Content Include="AzureNewStorageAccount\task.json" />
+    <Content Include="AzureARMTemplateDeployment\ARMTemplateDeployment.ps1" />
+    <Content Include="AzureARMTemplateDeployment\AzureRmSetup.ps1" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\FindFunctions.ps1" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\InputFunctions.ps1" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\LegacyFindFunctions.ps1" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\lib.json" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\LocalizationFunctions.ps1" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\LoggingCommandFunctions.ps1" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\LongPathFunctions.ps1" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\OutFunctions.ps1" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\ServerOMFunctions.ps1" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\ToolFunctions.ps1" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\TraceFunctions.ps1" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\VstsTaskSdk.psd1" />
+    <Content Include="AzureARMTemplateDeployment\ps_modules\VstsTaskSdk\VstsTaskSdk.psm1" />
+    <Content Include="AzureARMTemplateDeployment\task.json" />
+    <Content Include="AzureAutomationAccount\azurenewautomationac.ps1" />
+    <Content Include="AzureAutomationAccount\AzureRmSetup.ps1" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\FindFunctions.ps1" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\InputFunctions.ps1" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\LegacyFindFunctions.ps1" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\lib.json" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\LocalizationFunctions.ps1" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\LoggingCommandFunctions.ps1" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\LongPathFunctions.ps1" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\OutFunctions.ps1" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\ServerOMFunctions.ps1" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\ToolFunctions.ps1" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\TraceFunctions.ps1" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\VstsTaskSdk.psd1" />
+    <Content Include="AzureAutomationAccount\ps_modules\VstsTaskSdk\VstsTaskSdk.psm1" />
+    <Content Include="AzureAutomationAccount\task.json" />
+    <Content Include="AzureImportAAResource\azureimportaaresource.ps1" />
+    <Content Include="AzureImportAAResource\AzureRmSetup.ps1" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\FindFunctions.ps1" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\InputFunctions.ps1" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\LegacyFindFunctions.ps1" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\lib.json" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\LocalizationFunctions.ps1" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\LoggingCommandFunctions.ps1" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\LongPathFunctions.ps1" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\OutFunctions.ps1" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\ServerOMFunctions.ps1" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\ToolFunctions.ps1" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\TraceFunctions.ps1" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\VstsTaskSdk.psd1" />
+    <Content Include="AzureImportAAResource\ps_modules\VstsTaskSdk\VstsTaskSdk.psm1" />
+    <Content Include="AzureImportAAResource\task.json" />
+    <Content Include="AzureImportDSCConfiguration\azureimportdscconfig.ps1" />
+    <Content Include="AzureImportDSCConfiguration\AzureRmSetup.ps1" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\FindFunctions.ps1" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\InputFunctions.ps1" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\LegacyFindFunctions.ps1" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\lib.json" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\LocalizationFunctions.ps1" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\LoggingCommandFunctions.ps1" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\LongPathFunctions.ps1" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\OutFunctions.ps1" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\ServerOMFunctions.ps1" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\ToolFunctions.ps1" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\TraceFunctions.ps1" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\VstsTaskSdk.psd1" />
+    <Content Include="AzureImportDSCConfiguration\ps_modules\VstsTaskSdk\VstsTaskSdk.psm1" />
+    <Content Include="AzureImportDSCConfiguration\task.json" />
+    <Content Include="AzureGetAARegInfo\azuregetaareginfo.ps1" />
+    <Content Include="AzureGetAARegInfo\AzureRmSetup.ps1" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\FindFunctions.ps1" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\InputFunctions.ps1" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\LegacyFindFunctions.ps1" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\lib.json" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\LocalizationFunctions.ps1" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\LoggingCommandFunctions.ps1" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\LongPathFunctions.ps1" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\OutFunctions.ps1" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\ServerOMFunctions.ps1" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\ToolFunctions.ps1" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\TraceFunctions.ps1" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\VstsTaskSdk.psd1" />
+    <Content Include="AzureGetAARegInfo\ps_modules\VstsTaskSdk\VstsTaskSdk.psm1" />
+    <Content Include="AzureGetAARegInfo\task.json" />
+    <None Include="package.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="vss-extension.json" />
+    <None Include="ThirdPartyNotices.txt" />
+    <None Include="license.md" />
+    <None Include="overview.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52265</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52265/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>

@@ -1,0 +1,97 @@
+{
+  "manifestVersion": 1,
+  "id": "summus-azure-tools",
+  "version": "0.1.1",
+  "name": "Azure-Arm-Tasks",
+  "scopes": [],
+  "description": "Various tasks to help ARM deployment in a vsts pipeline",
+  "publisher": "summustech",
+  "galleryFlags": [
+    "Preview"
+  ],
+  "icons": {
+    "default": "static/images/logo.png"
+  },
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "demands": [
+    "api-version/3.0"
+  ],
+  "tags": [
+    "Sample"
+  ],
+  "categories": [
+    "Build and release"
+  ],
+  "screenshots": [
+    {
+      "path": "static/images/screen1.png"
+    }    
+  ],
+  "content": {
+    "license": {
+      "path": "license.md"
+    },
+
+    "details": {
+      "path": "overview.md" 
+    }
+  },
+  "links": {
+    "getstarted": {
+      "uri": "https://github.com/sujitks/AzureArmVSTSTasks/wiki"
+    },
+    "support": {
+      "uri": "https://github.com/sujitks/AzureArmVSTSTasks/issues"
+    },
+    "issues": {
+      "uri": "https://github.com/sujitks/AzureArmVSTSTasks/issues"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/sujitks/AzureArmVSTSTasks"
+  },
+  "branding": {
+    "color": "rgb(220, 235, 252)",
+    "theme": "light"
+  },
+  "files": [
+    {
+      "path": "azurenewresourceGroup"
+    },
+    {
+      "path": "azurenewstorageaccount"
+    },
+    {
+      "path": "AzureARMTemplateDeployment"
+    },
+    {
+      "path": "AzureAutomationAccount"
+    },
+    {
+      "path": "AzureGetAARegInfo"
+    },
+    {
+      "path": "AzureImportDSCConfiguration"
+    },
+    {
+      "path": "AzureImportAAResource"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "Azure-Arm-Tasks",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "type": "ms.vss-distributed-task.task",
+      "properties": {
+        "name": "AzureArmTasks"
+      }
+    }
+  ]
+}
