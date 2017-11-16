@@ -1,33 +1,33 @@
 {
-   "id": "D11699DD-CC8A-42C9-BFCC-3F4A20209E58",
-   "name": "AzureCreateAutomationAccount",
-   "friendlyName": "AzureCreateAutomationAccount",
-   "description": "Creates a new automation account in Azure ARM resource group for the given name",
-   "helpMarkDown": "[More Information](https://github.com/sujitks/AzureArmVSTSTasks/wiki)",
-   "category": "Deploy",
+  "id": "D11699DD-CC8A-42C9-BFCC-3F4A20209E58",
+  "name": "AzureAutomationAccount",
+  "friendlyName": "AzureAutomationAccount",
+  "description": "Creates a new automation account in Azure ARM resource group for the given name",
+  "helpMarkDown": "[More Information](https://github.com/sujitks/AzureArmVSTSTasks/wiki)",
+  "category": "Deploy",
   "visibility": [ "Build", "Release" ],
-   "runsOn": [
+  "runsOn": [
 
-        "Agent",
+    "Agent",
 
-        "DeploymentGroup"
+    "DeploymentGroup"
 
-    ],
-   "author": "",
-   "version": {
-      "Major": 1,
-      "Minor": 0,
-      "Patch": 0
-   },
-   "demands": [],
-   "inputs": [
-      {
-         "name": "ResourceGroupName",
-         "type": "string",
-         "label": "Name of resource group",
-         "defaultValue": "",
-         "required": true
-      },
+  ],
+  "author": "",
+  "version": {
+    "Major": 1,
+    "Minor": 0,
+    "Patch": 0
+  },
+  "demands": [],
+  "inputs": [
+    {
+      "name": "ResourceGroupName",
+      "type": "string",
+      "label": "Name of resource group",
+      "defaultValue": "",
+      "required": true
+    },
     {
       "name": "Location",
       "type": "string",
@@ -49,15 +49,20 @@
       }
     },
     {
-         "name": "AccountName",
-         "type": "string",
-         "label": "Automation Account Name",
-         "defaultValue": "",
-         "required": true
-      }
-   ],
-   "instanceNameFormat": "azurenewautomationac",
-   "execution":
-    {"PowerShell3":{"target":"$(currentDirectory)\\azurenewautomationac.ps1","argumentFormat":"","workingDirectory":"$(currentDirectory)"}}
-   
+      "name": "AccountName",
+      "type": "string",
+      "label": "Automation Account Name",
+      "defaultValue": "",
+      "required": true
+    }
+  ],
+  "instanceNameFormat": "azurenewautomationac",
+  "execution": {
+    "PowerShell3": {
+      "target": "$(currentDirectory)\\azurenewautomationac.ps1",
+      "argumentFormat": "",
+      "workingDirectory": "$(currentDirectory)"
+    }
+  }
+
 }

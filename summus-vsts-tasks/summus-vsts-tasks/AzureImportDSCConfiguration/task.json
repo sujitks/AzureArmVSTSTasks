@@ -1,22 +1,22 @@
 {
-   "id": "A10ECF3B-D58E-4549-9C76-7979D9D4A6B0",
-   "name": "AzureImportDSCConfiguration",
-   "friendlyName": "Azure Import DSC Configuration",
-   "description": "Imports a DSC node configuration in the Azure Automation Account",
-   "helpMarkDown": "[More Information](https://github.com/sujitks/AzureArmVSTSTasks/wiki)",
-   "category": "Deploy",
+  "id": "A10ECF3B-D58E-4549-9C76-7979D9D4A6B0",
+  "name": "AzureImportDSCConfiguration",
+  "friendlyName": "Azure Import DSC Configuration",
+  "description": "Imports a DSC node configuration in the Azure Automation Account",
+  "helpMarkDown": "[More Information](https://github.com/sujitks/AzureArmVSTSTasks/wiki)",
+  "category": "Deploy",
   "visibility": [ "Build", "Release" ],
-   "runsOn": [
-        "Agent"
-    ],
-   "author": "Sujit Singh",
-   "version": {
-      "Major": 1,
-      "Minor": 0,
-      "Patch": 0
-   },
-   "demands": [],
-   "inputs": [
+  "runsOn": [
+    "Agent"
+  ],
+  "author": "Sujit Singh",
+  "version": {
+    "Major": 1,
+    "Minor": 0,
+    "Patch": 0
+  },
+  "demands": [],
+  "inputs": [
     {
       "name": "ResourceGroupName",
       "type": "string",
@@ -31,24 +31,24 @@
       "defaultValue": "",
       "required": true
     },
-      {
+    {
       "name": "DscConfigurationFilePath",
       "type": "filepath",
       "label": "DSC configuration file with path",
-        "helpMarkDown": "DSC Configuration file",
+      "helpMarkDown": "DSC Configuration file",
       "defaultValue": "",
       "required": true
     },
     {
       "name": "DscConfigurationFilePathData",
-         "type": "filepath",
+      "type": "filepath",
       "label": "DSC configuration data file with path",
-        "helpMarkDown": "DSC Configuration file",
+      "helpMarkDown": "DSC Configuration file",
       "required": true
     },
     {
       "name": "RecompileEvenIfNoChanges",
-       "type": "pickList",
+      "type": "pickList",
       "label": "Whether configuration should be recompile regardless of change",
       "defaultValue": "True",
       "required": true,
@@ -57,9 +57,14 @@
         "False": "False"
       }
     }
-   ],
-   "instanceNameFormat": "AzureImportDSCConfig",
-   "execution":
-    {"PowerShell3":{"target":"$(currentDirectory)\\azureimportdscconfig.ps1","argumentFormat":"","workingDirectory":"$(currentDirectory)"}}
-   
+  ],
+  "instanceNameFormat": "AzureImportDSCConfig",
+  "execution": {
+    "PowerShell3": {
+      "target": "$(currentDirectory)\\azureimportdscconfig.ps1",
+      "argumentFormat": "",
+      "workingDirectory": "$(currentDirectory)"
+    }
+  }
+
 }

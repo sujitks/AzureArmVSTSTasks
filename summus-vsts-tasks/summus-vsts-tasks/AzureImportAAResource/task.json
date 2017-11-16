@@ -1,24 +1,24 @@
 {
-   "id": "9AAF6FB8-A9B4-419E-9947-77F0D79FFBE8",
-   "name": "AzureImportAAResource",
-   "friendlyName": "AzureImportAAResource",
-   "description": "Imports a DSC resource in the Azure Automation Account",
-   "helpMarkDown": "[More Information](https://github.com/sujitks/AzureArmVSTSTasks/wiki)",
-   "category": "Deploy",
+  "id": "9AAF6FB8-A9B4-419E-9947-77F0D79FFBE8",
+  "name": "AzureImportAAResource",
+  "friendlyName": "AzureImportAAResource",
+  "description": "Imports a DSC resource in the Azure Automation Account",
+  "helpMarkDown": "[More Information](https://github.com/sujitks/AzureArmVSTSTasks/wiki)",
+  "category": "Deploy",
   "visibility": [ "Build", "Release" ],
-   "runsOn": [
+  "runsOn": [
 
-        "Agent",
-        "DeploymentGroup"
-    ],
-   "author": "",
-   "version": {
-      "Major": 1,
-      "Minor": 0,
-      "Patch": 0
-   },
-   "demands": [],
-   "inputs": [
+    "Agent",
+    "DeploymentGroup"
+  ],
+  "author": "",
+  "version": {
+    "Major": 1,
+    "Minor": 0,
+    "Patch": 0
+  },
+  "demands": [],
+  "inputs": [
     {
       "name": "ResourceGroupName",
       "type": "string",
@@ -33,11 +33,11 @@
       "defaultValue": "",
       "required": true
     },
-      {
+    {
       "name": "StorageAccountName",
       "type": "string",
-        "label": "Storage Account Name",
-        "helpMarkDown": "Storage account for uploading the resource before importing in AA",
+      "label": "Storage Account Name",
+      "helpMarkDown": "Storage account for uploading the resource before importing in AA",
       "defaultValue": "",
       "required": true
     },
@@ -59,13 +59,18 @@
       "name": "DscBlobContainerName",
       "type": "string",
       "label": "Blob Container name",
-       "helpMarkDown": "Blog container for uploading the resource before importing in AA",
+      "helpMarkDown": "Blog container for uploading the resource before importing in AA",
       "defaultValue": "",
       "required": true
     }
-   ],
-   "instanceNameFormat": "AzureImportAAResource",
-   "execution":
-    {"PowerShell3":{"target":"$(currentDirectory)\\azureimportaaresource.ps1","argumentFormat":"","workingDirectory":"$(currentDirectory)"}}
-   
+  ],
+  "instanceNameFormat": "AzureImportAAResource",
+  "execution": {
+    "PowerShell3": {
+      "target": "$(currentDirectory)\\azureimportaaresource.ps1",
+      "argumentFormat": "",
+      "workingDirectory": "$(currentDirectory)"
+    }
+  }
+
 }
