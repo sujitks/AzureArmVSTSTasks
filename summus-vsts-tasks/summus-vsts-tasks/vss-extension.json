@@ -1,17 +1,17 @@
 {
   "manifestVersion": 1,
   "id": "summus-azure-vsts-tools",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "name": "Azure-RM-Tasks",
   "scopes": [
-    "vso.work",
-    "vso.code_write",
-    "vso.build_execute"
+    "vso.build",
+    "vso.code",
+    "vso.test"
   ],
   "description": "Various tasks to help ARM deployment in a vsts pipeline",
   "publisher": "summustech",
   "galleryFlags": [
-    "Preview"
+    "Public"
   ],
   "icons": {
     "default": "static/images/logo.png"
@@ -33,7 +33,7 @@
   "screenshots": [
     {
       "path": "static/images/screen1.png"
-    }    
+    }
   ],
   "content": {
     "license": {
@@ -41,7 +41,7 @@
     },
 
     "details": {
-      "path": "overview.md" 
+      "path": "overview.md"
     }
   },
   "links": {
@@ -165,4 +165,4 @@
       }
     }
   ]
-    }
+}
