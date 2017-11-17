@@ -1,12 +1,10 @@
 {
   "manifestVersion": 1,
   "id": "summus-azure-vsts-tools",
-  "version": "0.1.5",
+  "version": "1.1.8",
   "name": "Azure-RM-Tasks",
   "scopes": [
-    "vso.build",
-    "vso.code",
-    "vso.test"
+  
   ],
   "description": "Various tasks to help ARM deployment in a vsts pipeline",
   "publisher": "summustech",

@@ -7,13 +7,10 @@
   "category": "Deploy",
   "visibility": [ "Build", "Release" ],
   "runsOn": [
-
     "Agent",
-
     "DeploymentGroup"
-
   ],
-  "author": "",
+  "author": "Sujit Singh",
   "version": {
     "Major": 1,
     "Minor": 0,
