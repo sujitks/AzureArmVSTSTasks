@@ -4,7 +4,7 @@ Import-VstsLocStrings "$PSScriptRoot\Task.json"
 
 $ResourceGroupName = Get-VstsInput -Name ResourceGroupName -Require
 $Location = Get-VstsInput -Name Location -Require
-$Type = Get-VstsInput -Name Get-Content -Require
+$Type = Get-VstsInput -Name Type -Require
 $StorageAccountName = Get-VstsInput -Name AccountName -Require
 
 #
