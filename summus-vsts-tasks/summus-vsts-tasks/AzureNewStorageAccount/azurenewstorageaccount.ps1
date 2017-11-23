@@ -45,7 +45,7 @@ if ($null -eq (Get-AzureRmResourceGroup | Where-Object { $_.ResourceGroupName -e
 # Create the storage account if it doesn't exist
 $StorageAccountNameLower = $StorageAccountName.ToLower();
 
-$checkStorageAccount = Find-AzureRmResource -ResourceType "Microsoft.Storage/storageAccounts" -ResourceNameContains $StorageAccountNameLower -ApiVersion "2016-07-01"
+$checkStorageAccount = Find-AzureRmResource -ResourceType "Microsoft.Storage/storageAccounts" -ResourceNameContains $StorageAccountNameLower -ApiVersion "2016-07-01"  -ErrorAction Inquire
 
 if ($null -eq $checkStorageAccount)
 {
