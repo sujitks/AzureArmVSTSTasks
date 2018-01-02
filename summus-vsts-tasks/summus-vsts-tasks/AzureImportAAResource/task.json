@@ -25,8 +25,7 @@
       "label": "Name of resource group",
       "defaultValue": "",
       "required": true
-    },
-    {
+    },{
       "name": "AccountName",
       "type": "string",
       "label": "Automation Account Name",
