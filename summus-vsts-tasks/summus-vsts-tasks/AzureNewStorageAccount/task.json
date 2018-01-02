@@ -7,9 +7,7 @@
   "category": "Deploy",
   "visibility": [ "Build", "Release" ],
   "runsOn": [
-
     "Agent",
-
     "DeploymentGroup"
 
   ],
